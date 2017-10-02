@@ -4621,7 +4621,7 @@ var fetchData = exports.fetchData = function fetchData() {
 		dispatch({ type: FETCHING_BOTS });
 
 		// return fetch(`//localhost:3000/static/data/MOCK_DATA.json`)
-		return (0, _isomorphicFetch2.default)('../../static/data/MOCK_DATA.json').then(function (res) {
+		return (0, _isomorphicFetch2.default)('../../bots-filter/static/data/MOCK_DATA.json').then(function (res) {
 			return res.json();
 		}).then(function (res) {
 			return dispatch({
